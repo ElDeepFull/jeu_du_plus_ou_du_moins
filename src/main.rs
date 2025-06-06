@@ -3,17 +3,13 @@ use rand::Rng;
 use std::cmp::Ordering;
 
 
-
 fn main(){
     //Jeu plus ou moins
     println!("Devinez le nombre!");
     let nombre_secret = rand::rng()
     			.random_range(1..101);
-    
-    //println!("Le nombre secret est: {}", nombre_secret);
-    
-    loop {
-    
+       
+    loop {   
 	    println!("Veuillez entrer un nombre: ");
     
 	    //Le jeu va tirer au sort un nombre entre 1 et 100
@@ -38,10 +34,6 @@ fn main(){
 	    		println!("Bravo! Vous avez gagné !");
 	    		break;
 	    	}	
+    	}   
     }
-    
-    
-    }
-    //Si le nombre est bon, le jeu afficheraun message de felicitation
-    //Le jeu se termine
 }
